@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surpresa Romântica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="inicio">
+    <div class="pergunta">Escolha uma opção com sabedoria.</div> <!-- Pergunta centralizada -->
+    
+    <div class="botoes-amor">
+      <button id="botaoSim">💗 Sim</button>
+      <button id="botaoNao">❌ Não</button>
+    </div>
+
+    <div id="mensagemErro"></div> <!-- Mensagem de erro -->
+  </div>
+  
+
+  <div id="pagina" style="display: none;">
+    <audio id="musica" src="musica.mp3" autoplay loop></audio>
+    
+    <div class="player-musica">
+      <img src="images/ab67616d0000b2733138f891f3075c9c5d944037 (1).png" alt="Capa da música" class="capa-musica">
+      <div class="info-musica">
+        <h2 id="titulo-musica">Get You</h2>
+        <p id="artista-musica">Daniel Caesar</p>
+        <div class="controle-player">
+          <button id="playPauseBtn">⏸</button>
+          <span id="tempoAtual">0:00</span> / <span id="duracaoTotal">0:00</span>
+        </div>
+        
+        
+      </div>
+
+    </div>
+
+    <div class="cena-romantica">
+      <div class="carrossel">
+        <button onclick="fotoAnterior()">⬅️</button>
+        <img id="fotoCarrossel" src="images/foto1.jpg" class="foto-romantica" alt="Foto Romântica">
+        <button onclick="proximaFoto()">➡️</button>
+      </div>
+
+      <h1 class="frase">💖 Estamos namorando há:</h1>
+      <p class="contador" id="contador"></p>
+    </div>
+
+    <div class="barra">
+
+    </div>
+  
+    <div class="fraseromantica">
+      <h2 class="fraser">Finge que tem uma frase romântica aqui! 💖</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
