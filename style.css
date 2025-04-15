@@ -266,6 +266,11 @@ button {
     font-size: 14px;
   }
 
+  button {
+    position: relative;
+    top: 1px;
+  }
+
   .info-musica p {
     font-size: 12px;
   }
@@ -297,6 +302,11 @@ button {
   #botaoSim, #botaoNao {
     padding: 12px 25px; /* Botões ainda menores em telas pequenas */
     font-size: 16px; 
+  }
+
+  button {
+    position: relative;
+    top: 1px;
   }
 
   .frase {
